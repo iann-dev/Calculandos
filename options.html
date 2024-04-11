@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculandos</title>
+  <link rel="stylesheet" href="./components/game1/options.css">
+  <link rel="icon" href="./components/game1/img/cerebro.png">
+  <script src="./components/game1/js/interprete.js"></script>
+</head>
+<body>
+
+  <div class="container"> 
+    <div class="openin">
+      <img src="./components/game1/img/titulos.png" alt="Calculandos, com um cérebro humanóide e pensativo ao lado">
+    </div>
+  </div>
+
+  <div class="container">
+    <a class="button" href="javascript:void(0)" onclick="exibirInterprete()">Auditiva</a>
+
+  </div>
+
+  <div class="back">
+    <a class="back-botao" href="calculandos.html">Voltar</a>
+  </div>
+
+  <div class="help">
+    <button id="img-help">
+      <img src="./components/game1/img/help.png" width="91.5" height="80" alt="Botão de ajuda">
+    </button>
+
+    <script>
+      var button = document.getElementById("img-help");
+
+      button.addEventListener("click", function() {
+        alert("A acessibilidade auditiva fornecerá intérprete em LIBRAS virtual, para facilitar a jogatina para jogadores surdos");
+      });
+
+      function exibirInterprete() {
+        localStorage.setItem("exibirInterprete", "true");
+        var interprete = document.getElementById("interprete");
+        interprete.style.display = "block";
+      }
+
+      // Verificar o valor no localStorage ao carregar a página
+      window.addEventListener("load", function() {
+        var exibirInterprete = localStorage.getItem("exibirInterprete");
+
+        if (exibirInterprete === "true") {
+          var interprete = document.getElementById("interprete");
+          interprete.style.display = "block";
+        }
+      });
+    </script>
+  </div>
+
+  <div id="interprete" style="display: none;">
+    <!-- Aqui está o conteúdo do intérprete de LIBRAS -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+  </div>
+  
+
+</body>
+</html>

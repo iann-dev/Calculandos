@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculandos</title>
+  <link rel="stylesheet" href="./components/game1/introdução.css">
+  <link rel="icon" href="./components/game1/img/cerebro.png">
+  <script src="./components/game1/js/interprete.js"></script>
+</head>
+<body>
+
+  <div class="container"> 
+    <div class="openin">
+      <img src="./components/game1/img/titulos.png" alt="Calculandos, com um cérebro humanóide e pensativo ao lado">
+    </div>
+  </div>
+
+  <div class="credits-box">
+    <h1>FASE 1: RADICIAÇÃO E POTENCIAÇÃO</h1>
+    <p style="text-align: justify;">
+        Radiciação é o método matemático inverso à potenciação. Enquanto os cálculos com potências são determinados pela multiplicação de elementos iguais 	sucessivas vezes, a radiciação procura quais são esses elementos. Em 11², 	por exemplo, temos: 11² = 11.11 = 121. Neste caso, dizemos que a raiz quadrada de 121 é igual a 11. <br>
+    </p>
+
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cWL3FjqLhOM?start=78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="options" style="margin-top: 50px;"">
+    <div class="options-row">
+      <a class="button" href="./calculandos.html">VOLTAR</a>
+      <a class="button" href="./questao1.html">JOGAR</a>
+    </div>
+  </div>
+
+  <div id="interprete" style="display: none;">
+    <!-- Aqui está o conteúdo do intérprete de LIBRAS -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculandos</title>
+  <link rel="stylesheet" href="./components/game1/introdução.css">
+  <link rel="icon" href="./components/game1/img/cerebro.png">
+  <script src="./components/game1/js/interprete.js"></script>
+</head>
+<body>
+
+  <div class="container"> 
+    <div class="openin">
+      <img src="./components/game1/img/titulos.png" alt="Calculandos, com um cérebro humanóide e pensativo ao lado">
+    </div>
+  </div>
+
+  <div class="credits-box">
+    <h1>FASE 4: MEDIA ARITMETICA</h1>
+    <p style="text-align: justify;">
+      A média aritmética é a soma de um conjunto de números dividida pelo total de números no conjunto. Ela é usada para encontrar um valor médio.
+      Exemplo: A média dos números 4, 7, 9 e 12 é igual a (4 + 7 + 9 + 12) ÷ 4 = 8, porque a soma dos números é 32 e há um total de 4 números.<br>
+    </p>
+
+    <div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ZMFo1lLFTc8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="options">
+    <div class="options-row">
+      <a class="button" href="./calculandos.html">VOLTAR</a>
+      <a class="button" href="./questao1fase4.html">JOGAR</a>
+    </div>
+  </div>
+
+  <div id="interprete" style="display: none;">
+    <!-- Aqui está o conteúdo do intérprete de LIBRAS -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+  </div>
+
+</body>
+</html>

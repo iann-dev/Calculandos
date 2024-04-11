@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculandos</title>
+  <link rel="stylesheet" href="./components/game1/introdução.css">
+  <link rel="icon" href="./components/game1/img/cerebro.png">
+  <script src="./components/game1/js/interprete.js"></script>
+</head>
+<body>
+
+  <div class="container"> 
+    <div class="openin">
+      <img src="./components/game1/img/titulos.png" alt="Calculandos, com um cérebro humanóide e pensativo ao lado">
+    </div>
+  </div>
+
+  <div class="credits-box">
+    <h1>FASE 3: PORCENTAGEM</h1>
+    <p style="text-align: justify;">
+      A porcentagem é uma forma de expressar uma quantidade como uma fração de 100. Ela é frequentemente usada para representar proporções e cálculos de desconto.
+      Exemplo: 25% de 80 é igual a 20, porque 25% de 80 significa que você está considerando 25 partes de 100 do número 80, o que resulta em 20.<br>
+    </p>
+ 
+    <div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/azedx0uou64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="options">
+    <div class="options-row">
+      <a class="button" href="./calculandos.html">VOLTAR</a>
+      <a class="button" href="./questao1fase3.html">JOGAR</a>
+    </div>
+  </div>
+
+  <div id="interprete" style="display: none;">
+    <!-- Aqui está o conteúdo do intérprete de LIBRAS -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+  </div>
+
+</body>
+</html>

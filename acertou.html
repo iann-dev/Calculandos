@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculandos</title>
+  <link rel="stylesheet" href="./components/game1/introdução.css">
+  <link rel="icon" href="./components/game1/img/cerebro.png">
+  <script src="./components/game1/js/interprete.js"></script>
+</head>
+<body>
+
+  <div class="container"> 
+    <div class="openin">
+      <img src="./components/game1/img/titulos.png" alt="Calculandos, com um cérebro humanóide e pensativo ao lado">
+    </div>
+  </div>
+
+  <div class="credits-box">
+    <BR></BR>
+    <h1 style="color: green;">VOCÊ VENCEU</h1>
+    <BR></BR>
+    <p style="text-align: justify;">
+      Parabéns, jogador! Você é um vencedor no Calculandos! Sua dedicação, conhecimento e habilidades foram recompensados com sucesso ao conquistar o jogo. Estamos muito orgulhosos de você por ter demonstrado excelência e habilidade para responder corretamente às perguntas desafiadoras. Continue assim, explorando seu potencial e desfrutando da emocionante jornada de aprendizado que o Calculandos proporciona. Que essa vitória seja apenas o começo de muitas conquistas incríveis em sua jornada educativa. Parabéns novamente e continue brilhando!
+    </p>
+  </div>
+
+  <div class="options">
+    <div class="options-row">
+      <a class="button" href="./calculandos.html">VOLTAR</a>
+      <a class="button" href="./jogar.html">TENTAR DE NOVO</a>
+    </div>
+  </div>
+
+  <div id="interprete" style="display: none;">
+    <!-- Aqui está o conteúdo do intérprete de LIBRAS -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+  </div>
+
+</body>
+</html>

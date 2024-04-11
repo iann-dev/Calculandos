@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/img/icon.png">
+    <link rel="stylesheet" href="components/index/reset.css">
+    <link rel="stylesheet" href="components/index/footer.css">
+    <link rel="stylesheet" href="components/index/header.css">
+    <link rel="stylesheet" href="components/index/menu.css">
+    <link rel="stylesheet" href="components/index/start.css">
+    <script src="./components/game1/js/interprete.js"></script>
+    <title>LTV EQUAÇÕES</title>
+</head>
+<body>
+    <header>
+            <a href="index.html"><img src="./components/index/img/icon-nav.png" class="header-img"></a>
+            <p class="header-texto">LTV EQUAÇÕES</p>        
+    </header>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="#">Top Jogos</a>
+                <ul>
+                    <li><a href="#">Quiz</a></li>
+                    <li><a href="#">Sudoka</a></li>
+                    <li><a href="#">Descubra IMC</a></li>
+                    <li><a href="#">Jogo da Forca</a></li>
+                    <li><a href="#">2048</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Jogos de Tabuleiro</a>
+                <ul>
+                    <li><a href="#">aaaa</a></li>
+                    <li><a href="#">Quiz</a></li>
+                    <li><a href="#">Quiz</a></li>
+                </ul>
+            </li>               
+            <li><a href="#">Quebra-Cabeça</a>
+                <ul>
+                    <li><a href="#"></a></li>
+                </ul>
+            </li>
+            <li><a href="#">Jogos de 2 jogadores</a></li>
+            <li><a href="#">Sudoku</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <div class="main-text">
+            <p>CLIQUE LOGO ABAIXO PARA INICIAR O JOGO</p>
+        </div>
+
+        <div class="main-calculandos">
+            <a href="./calculandos.html">
+                <img src="./components/index/img/calculandos.png">
+            </a>
+        </div>
+
+        <div class="main-controls">
+            <img src="./components/index/img/controles.png" alt="controles do jogo">
+        </div>
+    </div> 
+    
+    <div id="interprete" style="display: none;">
+        <!-- Aqui está o conteúdo do intérprete de LIBRAS -->
+        <div vw class="enabled">
+          <div vw-access-button class="active"></div>
+          <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+          </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+          new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+    </div>
+
+    <footer class="footer">
+        ©️ 2023 LTV EQUAÇÕES
+    </footer>
+</body>
+</html>

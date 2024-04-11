@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculandos</title>
+  <link rel="stylesheet" href="./components/game1/introdução.css">
+  <link rel="icon" href="./components/game1/img/cerebro.png">
+  <script src="./components/game1/js/interprete.js"></script>
+  <script src="./components/game1/js/recomecar.js"></script>
+</head>
+<body>
+
+  <div class="container"> 
+    <div class="openin">
+      <img src="./components/game1/img/titulos.png" alt="Calculandos, com um cérebro humanóide e pensativo ao lado">
+    </div>
+  </div>
+
+  <div class="credits-box">
+    <h1 style="color: red;">VOCÊ ERROU</h1>
+    <p style="text-align: justify;">
+        Que pena jogador, você respondeu incorretamente à pergunta. No Calculandos, é importante acertar as respostas para progredir no jogo e aumentar o seu conhecimento. Não se preocupe, você sempre terá a oportunidade de aprender com os erros e tentar novamente. Continue jogando e desafiando-se para melhorar suas habilidades e ampliar seus conhecimentos. O importante é perseverar e aproveitar a jornada de aprendizado que o Calculandos oferece.
+    </p>
+    <div id="video-container" style="display: none;">
+    </div>
+  </div>
+
+  <div class="options">
+    <div class="options-row">
+      <a class="button" href="./calculandos.html">VOLTAR</a>
+      <a class="button" href="#">TENTAR DE NOVO</a>
+    </div>
+  </div>
+
+  <div id="interprete" style="display: none;">
+    <!-- Aqui está o conteúdo do intérprete de LIBRAS -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+  </div>
+
+</body>
+</html>

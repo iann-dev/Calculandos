@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculandos</title>
+  <link rel="stylesheet" href="./components/game1/jogar.css">
+  <link rel="icon" href="./components/game1/img/cerebro.png">
+  <script src="./components/game1/js/interprete.js"></script>
+</head>
+<body>
+
+  <div class="container"> 
+    <div class="openin">
+      <img src="./components/game1/img/titulos.png" alt="Calculandos, com um cérebro 
+      humanóide e pensativo ao lado"></div>
+  </div>
+
+ <div>
+
+    <div class="questions">
+      <img src="./components/game1/img/number-quest/number3.png" alt="Questao 3">
+      <p>Um adulto saudável abriga cerca de 100 bilhões de bactérias, só em seu sistema digestivo. Esse número de bactérias pode ser escrito como:</p>
+    </div>
+
+    <div class="options">
+      <div class="options-row">
+        <a class="button" href="./errou.html">10^12</a>
+        <a class="button" href="./errou.html">10^8</a>
+      </div>
+      <div class="options-row">
+        <a class="button" href="./errou.html">10^10</a>
+        <a class="button" href="./fase2.html">10^11</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="interprete" style="display: none;">
+    <!-- Aqui está o conteúdo do intérprete de LIBRAS -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+  </div>
+
+
+  
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculandos</title>
+  <link rel="stylesheet" href="./components/game1/introdução.css">
+  <link rel="icon" href="./components/game1/img/cerebro.png">
+  <script src="./components/game1/js/interprete.js"></script>
+</head>
+<body>
+
+  <div class="container"> 
+    <div class="openin">
+      <img src="./components/game1/img/titulos.png" alt="Calculandos, com um cérebro humanóide e pensativo ao lado">
+    </div>
+  </div>
+
+  <div class="credits-box">
+    <h1>O QUE É O CALCULANDOS</h1>
+    <p style="text-align: justify;">
+      Calculandos é um jogo de questionário educativo projetado para desafiar e testar os conhecimentos dos jogadores em várias áreas da matemática. O objetivo principal do jogo é proporcionar uma experiência divertida e envolvente, enquanto os jogadores respondem a perguntas de múltipla escolha. <br>
+      O jogo apresenta uma variedade de perguntas com opções de resposta, e os jogadores devem selecionar a resposta correta para avançar para a próxima pergunta. O jogo pode abranger uma ampla gama de tópicos e oferecer diferentes níveis de dificuldade para atender às preferências e conhecimentos dos jogadores. <br>
+      O Calculandos é adequado para jogadores de todas as idades e pode ser usado como uma ferramenta educacional divertida, tanto em ambientes escolares quanto em casa. Ele proporciona uma oportunidade para os jogadores expandirem seus conhecimentos enquanto se divertem. Não há elementos de ranking ou conquistas, permitindo que os jogadores desfrutem do jogo sem competições ou recompensas extras além da satisfação pessoal de responder corretamente às perguntas.<br>
+      Para facilitar toda a compreensão de todos os assuntos apresentaremos uma explicação e um video na plataforma do youtube para assim os jogadores responderem as questoes com excelencia. 
+    </p>
+  </div>
+
+  <div class="options">
+    <div class="options-row">
+      <a class="button" href="./calculandos.html">VOLTAR</a>
+      <a class="button" href="./fase1.html">JOGAR</a>
+    </div>
+  </div>
+
+  <div id="interprete" style="display: none;">
+    <!-- Aqui está o conteúdo do intérprete de LIBRAS -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+  </div>
+
+</body>
+</html>

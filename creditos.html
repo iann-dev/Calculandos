@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculandos</title>
+    <link rel="stylesheet" href="./components/game1/creditos.css">
+    <link rel="icon" href="./components/game1/img/cerebro.png">
+    <script src="./components/game1/js/interprete.js"></script>
+</head>
+<body>
+    <div class="container"> 
+        <div class="openin">
+            <img src="./components/game1/img/titulos.png" alt="Calculandos, com um cérebro humanóide e pensativo ao lado">
+        </div>
+    </div>
+      
+    <div class="back">
+        <a class="back-botao" href="calculandos.html">Voltar</a>
+    </div>
+
+    <div id="interprete" style="display: none;">
+        <!-- Aqui está o conteúdo do intérprete de LIBRAS -->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+    </div>
+
+    <div class="credits-box">
+      <h1>Rhanna Luiza</h1>
+      <p>Produtor executivo, desenvolvedor web, game/web/level designer</p>
+      <br>
+      <h1>Iann Carlos</h1>
+      <p>Desenvolvedor web, level designer</p>
+      <br>
+      <h1>Davi Moreira</h1>
+      <p>Tester, roteirista de games</p>
+      <br>
+      <h1>Rommel Ríshian</h1>
+      <p>Social Media</p>
+      <br>
+      <h1>Daniel Filho</h1>
+      <p>Social Media</p>
+    </div>
+    
+</body>
+</html>

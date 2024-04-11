@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculandos</title>
+  <link rel="stylesheet" href="./components/game1/jogar.css">
+  <link rel="icon" href="./components/game1/img/cerebro.png">
+  <script src="./components/game1/js/interprete.js"></script>
+</head>
+<body>
+
+  <div class="container"> 
+    <div class="openin">
+      <img src="./components/game1/img/titulos.png" alt="Calculandos, com um cérebro 
+      humanóide e pensativo ao lado"></div>
+  </div>
+
+ <div>
+
+    <div class="questions">
+      <img src="./components/game1/img/number-quest/number2.png" alt="Questao 2">
+      <p>Uma loja vende quatro camisetas por R$80, cada uma com o mesmo preço. Qual é o preço médio de cada camiseta?</p>
+    </div>
+
+    <div class="options">
+      <div class="options-row">
+        <a class="button" href="./errou.html">R$15</a>
+        <a class="button" href="./questao3fase4.html">R$20</a>
+      </div>
+      <div class="options-row">
+        <a class="button" href="./errou.html">R$30</a>
+        <a class="button" href="./errou.html">R$40</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="interprete" style="display: none;">
+    <!-- Aqui está o conteúdo do intérprete de LIBRAS -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+  </div>
+
+
+  
+</body>
+</html>
