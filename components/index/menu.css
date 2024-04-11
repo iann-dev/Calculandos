@@ -1,0 +1,95 @@
+#menu {
+    background-color: rgb(37, 37, 39);
+    text-align: center;
+}
+
+#menu ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: table;
+}
+
+#menu ul li {
+    display: inline-block;
+    position: relative;
+}
+
+#menu ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#menu ul li a:hover {
+    background-color: rgb(68, 43, 107);
+    transition: .4s;
+}
+
+#menu ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgb(37, 37, 39);
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    text-align: center;
+}
+
+#menu ul li:hover ul {
+    display: block;
+  }
+  
+  #menu ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgb(37, 37, 39);
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s, visibility 0.4s;
+  }
+  
+  #menu ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  #menu ul li ul li {
+    display: block;
+    width: 100%;
+  }
+  
+  #menu ul li ul li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Adicionando estilos responsivos */
+  @media (max-width: 768px) {
+    #menu ul li ul {
+      position: static;
+      display: none;
+      opacity: 1;
+      visibility: visible;
+    }
+  
+    #menu ul li:hover ul {
+      display: none;
+    }
+  }
+
+  
